@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neu</title>
+</head>
+
+<body>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        .firstrow {
+            background-color: rgb(235, 232, 232);
+            padding: 8px;
+            color: rgb(0, 0, 0);
+            position: sticky;
+            vertical-align: top;
+            text-align: right;
+        }
+
+        .firstrow:hover {}
+
+        .menuitem {}
+
+        .menuitem:hover {
+            color: rgb(99, 96, 96);
+        }
+
+        .menuitem2:hover {
+            color: rgb(99, 96, 96);
+        }
+
+        .menuitem2 {
+            text-align: center;
+            padding: 10px;
+            position: sticky;
+        }
+
+        .secondrow {
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+            color: black;
+            text-decoration: none;
+        }
+
+        .searchbox {
+            background-color: white;
+            padding: 2px;
+            width: 1500px;
+            word-spacing: 10px;
+
+        }
+
+        tr {
+            width: 10px;
+            border-spacing: 50px;
+            vertical-align: middle;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .neu-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .neu-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .neu-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        .neu-item-text {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+        }
+
+        .neu-item-text-size {
+            text-align: center;
+            margin-top: 5px;
+            font-size: 14px;
+            color: rgb(0, 0, 0);
+        }
+
+        .neu-item-text-price {
+            text-align: center;
+            margin-top: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+        }
+
+        .footer {
+            background-color: white;
+            padding: 60px 20px 30px;
+            margin-top: 60px;
+        }
+
+        .footer-section {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-top {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            padding-bottom: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-column h3 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 12px;
+            color: black;
+            font-size: 14px;
+        }
+
+        .footer-middle {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr) auto;
+            gap: 40px;
+            padding-bottom: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-country {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: black;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 20px;
+            color: #666;
+        }
+    </style>
+
+
+
+
+
+
+
+    <div class="firstrow">
+        <span class="menuitem">Store suchen |</span>
+        <span class="menuitem">Hilfe |</span>
+        <span class="menuitem">Sei dabei |</span>
+        <span class="menuitem">Anmelden</span>
+
+    </div>
+
+    <div class="secondrow">
+        <span class="menuitem2"></span><a href="index.html"style="color: black; text-decoration: none">Home</a>
+        <span class="menuitem2"></span><a href="Neu.html"style="color: black; text-decoration: none">Neu</a>
+        <span class="menuitem2"></span><a href="Herren.html"style="color: black; text-decoration: none">Herren</a>
+        <span class="menuitem2"></span><a href="Damen.html"style="color: black; text-decoration: none">Damen</a>
+        <span class="menuitem2"></span><a href="Kinder.html"style="color: black; text-decoration: none">Kinder</a>
+        <span class="menuitem2"></span><a href="Sport.html"style="color: black; text-decoration: none">Sport</a>
+        <span class="menuitem2">Sportswear</span>
+        <span class="menuitem2" class="searchbox">
+            <input type="text" placeholder="Suche" readonly>
+
+    </div>
+
+    <h1>Neuheiten Schuhe, Bekleidung & Zubehör</h1>
+
+    <div class="neu-container">
+        <div class="neu-item">
+            <img src="bilder/neu1.png" alt="Neu">
+            <div class="neu-item-text">Fc Barcelona 2025/26 Stadium Fourth</div>
+            <div class="neu-item-text-size">Nike Replika-Fußballtrikot mit Dri-FIT-Technologie (Herren)</div>
+            <div class="neu-item-text-price">99,99€</div>
+        </div>
+        <div class="neu-item">
+            <img src="bilder/neu2.png" alt="Neu">
+            <div class="neu-item-text">Fc Barcelona 2025/26 Stadium Fourth</div>
+            <div class="neu-item-text-size">Nike Dri-FIT-Technologie Replika-Fußballtrikot (Damen)</div>
+            <div class="neu-item-text-price">99,99€</div>
+        </div>
+        <div class="neu-item">
+            <img src="bilder/neu3.png" alt="Neu">
+            <div class="neu-item-text">Fc Barcelona 2025/26 Match Fourth</div>
+            <div class="neu-item-text-size">Nike Authentic Dri-FIT ADV Fußballtrikot (Herren)</div>
+            <div class="neu-item-text-price">149,99€</div>
+        </div>
+        <div class="neu-item">
+            <img src="bilder/neu4.png" alt="Neu">
+            <div class="neu-item-text">Paris Saint-Germain 2025/26 Match Fourth</div>
+            <div class="neu-item-text-size">Jordan Dri-FIT ADV Authentic Fußballtrikot (Herren)</div>
+            <div class="neu-item-text-price">149,99€</div>
+        </div>
+        <div class="neu-item">
+            <img src="bilder/neu5.png" alt="Neu">
+            <div class="neu-item-text">Paris Saint-Germain 2025/26 Stadium Fourth</div> 
+            <div class="neu-item-text-size">Jordan Dri-FIT Replica Fußballtrikot (Damen)</div>
+            <div class="neu-item-text-price">99,99€</div>
+        </div>
+        <div class="neu-item">
+            <img src="bilder/neu6.png" alt="Neu">
+            <div class="neu-item-text">Paris Saint-Germain 2025/26 Stadium Fourth</div> 
+            <div class="neu-item-text-size">Jordan Dri-FIT Replika-Fußballtrikot (Herren)</div>
+            <div class="neu-item-text-price">99,99€</div>
+        </div>
+        <div class="neu-item">
+            <img src="bilder/neu7.png" alt="Neu">
+            <div class="neu-item-text">Nike Vomero Premium</div>
+            <div class="neu-item-text-size">Straßenlaufschuh (Damen)</div>
+            <div class="neu-item-text-price">229,99€</div>
+        </div>
+        <div class="neu-item">
+            <img src="bilder/neu8.png" alt="Neu">
+            <div class="neu-item-text">Nike Dunk Low</div>
+            <div class="neu-item-text-size">Damenschuh</div>
+            <div class="neu-item-text-price">129,99€</div>
+        </div>
+        <div class="neu-item">
+            <img src="bilder/neu9.png" alt="Neu">
+            <div class="neu-item-text">Air Jordan 3 Retro "Medium Olive"</div>    
+            <div class="neu-item-text-size">Herrenschuh</div>
+            <div class="neu-item-text-price">209,99€</div>      
+        </div> 
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-section">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <h3>Schuhe</h3>
+                    <ul>
+                        <li>Schwarze Laufschuhe</li>
+                        <li>Weiße Laufschuhe</li>
+                        <li>Nike P-6000 Schuhe</li>
+                        <li>Nike Initiator Schuhe</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Bekleidung</h3>
+                    <ul>
+                        <li>Yoga-Hosen</li>
+                        <li>Trainingshosen aus Te...</li>
+                        <li>Tech Fleece</li>
+                        <li>Geschenke: Bekleidung</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Kinder</h3>
+                    <ul>
+                        <li>Schwarze Schuhe für ...</li>
+                        <li>Schwarze Schuhe für ...</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>Fußballclubs</li>
+                        <li>Fußball</li>
+                        <li>Nike England</li>
+                        <li>Nike Run Club</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-middle">
+                <div class="footer-column">
+                    <h3>Ressourcen</h3>
+                    <ul>
+                        <li>Geschenkgutscheine</li>
+                        <li>Geschenkgutscheine für Firmen</li>
+                        <li>Store suchen</li>
+                        <li>Nike Journal</li>
+                        <li>Member werden</li>
+                        <li>Feedback</li>
+                        <li>Aktionscodes</li>
+                        <li>Produktberatung</li>
+                        <li>Shoe Finder für Laufschuhe</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Hilfe</h3>
+                    <ul>
+                        <li>Hilfe</li>
+                        <li>Bestellstatus</li>
+                        <li>Versand und Lieferung</li>
+                        <li>Rückgaben</li>
+                        <li>Zahlungsoptionen</li>
+                        <li>Kontakt</li>
+                        <li>Bewertungen</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Unternehmen</h3>
+                    <ul>
+                        <li>Über Nike</li>
+                        <li>Neuigkeiten</li>
+                        <li>Karriere</li>
+                        <li>Investoren</li>
+                        <li>Nachhaltigkeit</li>
+                        <li>Barrierefreiheit</li>
+                        <li>Mission</li>
+                        <li>Nike Coaching</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Community-Rabatte</h3>
+                    <ul>
+                        <li>Studierende</li>
+                        <li>Lehrer:innen</li>
+                        <li>Einsatzkräfte</li>
+                        <li>Medizinisches Fachpersonal</li>
+                    </ul>
+                </div>
+                <div class="footer-country">
+                    <span>Österreich</span>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>2025 Nike, Inc. Alle Rechte vorbehalten</div>
+                <div class="footer-bottom-links">
+                    <span>Guides </span>
+                    <span>Nutzungsbedingungen</span>
+                    <span>Verkaufsbedingungen</span>
+                    <span>Impressum</span>
+                    <span>Datenschutzrichtlinie und Cookie-Erklärung</span>
+                    <span>Cookie-Einstellungen ändern.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

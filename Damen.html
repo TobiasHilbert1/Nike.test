@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike, Just Do It. Nike AT - Herren</title>
+</head>
+
+<body>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        .firstrow {
+            background-color: rgb(235, 232, 232);
+            padding: 8px;
+            color: rgb(0, 0, 0);
+            position: sticky;
+            vertical-align: top;
+            text-align: right;
+        }
+
+        .firstrow:hover {}
+
+        .menuitem {}
+
+        .menuitem:hover {
+            color: rgb(99, 96, 96);
+        }
+
+        .menuitem2:hover {
+            color: rgb(99, 96, 96);
+        }
+
+        .menuitem2 {
+            text-align: center;
+            padding: 10px;
+            position: sticky;
+        }
+
+        .secondrow {
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+            color: black;
+            text-decoration: none;
+        }
+
+        .searchbox {
+            background-color: white;
+            padding: 2px;
+            width: 1500px;
+            word-spacing: 10px;
+
+        }
+
+        tr {
+            width: 10px;
+            border-spacing: 50px;
+            vertical-align: middle;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .product {
+            padding: 2px;
+            height: 100%;
+
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
+            gap: 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .flex-item {
+            flex: 1 1 calc(33.333% - 10px);
+            min-width: 300px;
+            max-width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .flex-container-2col {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
+            gap: 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .flex-container-2col .flex-item {
+            flex: 1 1 calc(50% - 10px);
+            min-width: 300px;
+            max-width: 500px;
+        }
+        .flex-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+        }
+
+        .product2 {
+            
+        }
+
+        .ss-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .trends-section {
+            margin: 40px auto;
+            max-width: 1200px;
+            padding: 0 20px;
+        }
+
+        .trends-title {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 30px;
+        }
+
+        .trends-container {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .trends-item {
+            flex: 1;
+            min-width: 300px;
+            max-width: 400px;
+        }
+
+        .trends-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .athleten-container {
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .athleten-title {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 30px;
+        }
+
+        .athleten-container img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .footer {
+            background-color: white;
+            padding: 60px 20px 30px;
+            margin-top: 60px;
+        }
+
+        .footer-section {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-top {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            padding-bottom: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-column h3 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 12px;
+            color: black;
+            font-size: 14px;
+        }
+
+        .footer-middle {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr) auto;
+            gap: 40px;
+            padding-bottom: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-country {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: black;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 20px;
+            color: #666;
+        }
+    </style>
+
+
+
+
+
+
+
+    <div class="firstrow">
+        <span class="menuitem">Store suchen |</span>
+        <span class="menuitem">Hilfe |</span>
+        <span class="menuitem">Sei dabei |</span>
+        <span class="menuitem">Anmelden</span>
+
+    </div>
+<div class="secondrow">
+        <span class="menuitem2"></span><a href="index.html"style="color: black; text-decoration: none">Home</a>
+        <span class="menuitem2"></span><a href="Neu.html"style="color: black; text-decoration: none">Neu</a>
+        <span class="menuitem2"></span><a href="Herren.html"style="color: black; text-decoration: none">Herren</a>
+        <span class="menuitem2"></span><a href="Damen.html"style="color: black; text-decoration: none">Damen</a>
+        <span class="menuitem2"></span><a href="Kinder.html"style="color: black; text-decoration: none">Kinder</a>
+        <span class="menuitem2"></span><a href="Sport.html"style="color: black; text-decoration: none">Sport</a>
+        <span class="menuitem2">Sportswear</span>
+        <span class="menuitem2" class="searchbox">
+            <input type="text" placeholder="Suche" readonly>
+
+    </div>
+    <div class="ss-container">
+        <img src="bilder/ss1.png" alt="Slideshow" style="width: 100%; max-width: 100%; height: auto; display: block;">
+    </div>
+
+    <div class="trends-section">
+        <h2 class="trends-title">Neu am Start</h2>
+        <div class="trends-container">
+            <div class="trends-item">
+                <img src="bilder/Start1.png" alt="Trend 1">
+            </div>
+            <div class="trends-item">
+                <img src="bilder/Start2.png" alt="Trend 2">
+            </div>
+            <div class="trends-item">
+                <img src="bilder/Start3.png" alt="Trend 3">
+            </div>
+        </div>
+    </div>
+    <div class="athleten-container">
+        <h2 class="athleten-title">Athlete Picks</h2>
+        <img src="bilder/Picks.png" alt="Athlete">
+    </div>
+
+    <footer class="footer">
+        <div class="footer-section">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <h3>Schuhe</h3>
+                    <ul>
+                        <li>Schwarze Laufschuhe</li>
+                        <li>Weiße Laufschuhe</li>
+                        <li>Nike P-6000 Schuhe</li>
+                        <li>Nike Initiator Schuhe</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Bekleidung</h3>
+                    <ul>
+                        <li>Yoga-Hosen</li>
+                        <li>Trainingshosen aus Te...</li>
+                        <li>Tech Fleece</li>
+                        <li>Geschenke: Bekleidung</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Kinder</h3>
+                    <ul>
+                        <li>Schwarze Schuhe für ...</li>
+                        <li>Schwarze Schuhe für ...</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>Fußballclubs</li>
+                        <li>Fußball</li>
+                        <li>Nike England</li>
+                        <li>Nike Run Club</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-middle">
+                <div class="footer-column">
+                    <h3>Ressourcen</h3>
+                    <ul>
+                        <li>Geschenkgutscheine</li>
+                        <li>Geschenkgutscheine für Firmen</li>
+                        <li>Store suchen</li>
+                        <li>Nike Journal</li>
+                        <li>Member werden</li>
+                        <li>Feedback</li>
+                        <li>Aktionscodes</li>
+                        <li>Produktberatung</li>
+                        <li>Shoe Finder für Laufschuhe</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Hilfe</h3>
+                    <ul>
+                        <li>Hilfe</li>
+                        <li>Bestellstatus</li>
+                        <li>Versand und Lieferung</li>
+                        <li>Rückgaben</li>
+                        <li>Zahlungsoptionen</li>
+                        <li>Kontakt</li>
+                        <li>Bewertungen</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Unternehmen</h3>
+                    <ul>
+                        <li>Über Nike</li>
+                        <li>Neuigkeiten</li>
+                        <li>Karriere</li>
+                        <li>Investoren</li>
+                        <li>Nachhaltigkeit</li>
+                        <li>Barrierefreiheit</li>
+                        <li>Mission</li>
+                        <li>Nike Coaching</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Community-Rabatte</h3>
+                    <ul>
+                        <li>Studierende</li>
+                        <li>Lehrer:innen</li>
+                        <li>Einsatzkräfte</li>
+                        <li>Medizinisches Fachpersonal</li>
+                    </ul>
+                </div>
+                <div class="footer-country">
+                    <span>Österreich</span>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>2025 Nike, Inc. Alle Rechte vorbehalten</div>
+                <div class="footer-bottom-links">
+                    <span>Guides </span>
+                    <span>Nutzungsbedingungen</span>
+                    <span>Verkaufsbedingungen</span>
+                    <span>Impressum</span>
+                    <span>Datenschutzrichtlinie und Cookie-Erklärung</span>
+                    <span>Cookie-Einstellungen ändern.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
