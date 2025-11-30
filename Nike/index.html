@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike, Just Do It. Nike AT</title>
+</head>
+
+<body>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        .firstrow {
+            background-color: rgb(235, 232, 232);
+            padding: 8px;
+            color: rgb(0, 0, 0);
+            position: sticky;
+            vertical-align: top;
+            text-align: right;
+        }
+
+        .menuitem:hover {
+            color: rgb(99, 96, 96);
+        }
+        .menuitem2:hover {
+            color: rgb(99, 96, 96);
+        }
+
+        .menuitem2 {
+            text-align: center;
+            padding: 10px;
+            position: sticky;
+        }
+
+        .secondrow {
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+            color: black;
+            text-decoration: none;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
+            gap: 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .flex-item {
+            flex: 1 1 calc(33.333% - 10px);
+            min-width: 300px;
+            max-width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .flex-container-2col {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
+            gap: 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .flex-container-2col .flex-item {
+            flex: 1 1 calc(50% - 10px);
+            min-width: 300px;
+            max-width: 500px;
+        }
+        .flex-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+        }
+
+        .ss-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .klassiker-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto 30px;
+            padding: 15px 20px;
+        }
+
+        .klassiker-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: black;
+            margin: 0;
+        }
+
+        .klassiker-container {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .klassiker-item {
+            flex: 1;
+            max-width: 350px;
+            position: relative;
+            
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .klassiker-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .klassiker-label {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: #e0e0e0;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 500;
+            color: black;
+        }
+
+        .footer {
+            background-color: white;
+            padding: 60px 20px 30px;
+            margin-top: 60px;
+        }
+
+        .footer-section {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-top {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            padding-bottom: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-column h3 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-column ul li {
+            color: black;
+            font-size: 14px;
+        }
+
+        .footer-middle {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr) auto;
+            gap: 40px;
+            padding-bottom: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-country {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: black;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 20px;
+            color: #666;
+        }
+    </style>
+
+    <div class="firstrow">
+        <span class="menuitem">Store suchen |</span>
+        <span class="menuitem">Hilfe |</span>
+        <span class="menuitem">Sei dabei |</span>
+        <span class="menuitem">Anmelden</span>
+
+    </div>
+
+    <div class="secondrow">
+        <span class="menuitem2"></span><a href="index.html"style="color: black; text-decoration: none">Home</a>
+        <span class="menuitem2"></span><a href="Neu.html"style="color: black; text-decoration: none">Neu</a>
+        <span class="menuitem2"></span><a href="Herren.html"style="color: black; text-decoration: none">Herren</a>
+        <span class="menuitem2"></span><a href="Damen.html"style="color: black; text-decoration: none">Damen</a>
+        <span class="menuitem2"></span><a href="Kinder.html"style="color: black; text-decoration: none">Kinder</a>
+        <span class="menuitem2"></span><a href="Sport.html"style="color: black; text-decoration: none">Sport</a>
+        <span class="menuitem2">Sportswear</span>
+        <span class="menuitem2" class="searchbox">
+            <input type="text" placeholder="Suche" readonly>
+
+    </div>
+    <div class="ss-container">
+        <img src="bilder/ss1.png" alt="Slideshow" style="width: 100%; max-width: 100%; height: auto; display: block;">
+    </div>
+    
+    <div class="flex-container">
+        <div class="flex-item"><img src="bilder/s7.png" alt="Produkt"></div>
+        <div class="flex-item"><img src="bilder/s8.png" alt="Produkt"></div>
+        <div class="flex-item"><img src="bilder/s9.png" alt="Produkt"></div>
+    </div>
+    
+    <div class="flex-container-2col">
+        <div class="flex-item"><img src="bilder/s10.png" alt="Produkt"></div>
+        <div class="flex-item"><img src="bilder/s11.png" alt="Produkt"></div>
+    </div>
+    
+    <div class="flex-container-2col">
+        <div class="flex-item"><img src="bilder/s12.png" alt="Produkt"></div>
+        <div class="flex-item"><img src="bilder/s13.png" alt="Produkt"></div>
+    </div>
+
+    <div class="klassiker-section">
+        <div class="klassiker-header">
+            <h2 class="klassiker-title">Klassiker entdecken</h2>
+        </div>
+        <div class="klassiker-container">
+            <div class="klassiker-item">
+                <img src="bilder/ss2.png" alt="Klassiker 1">
+                <div class="klassiker-label">Klassiker 1</div>
+            </div>
+            <div class="klassiker-item">
+                <img src="bilder/ss3.png" alt="Klassiker 2">
+                <div class="klassiker-label">Klassiker 2</div>
+            </div>
+            <div class="klassiker-item">
+                <img src="bilder/ss4.png" alt="Klassiker 3">
+                <div class="klassiker-label">Klassiker 3</div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-section">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <h3>Schuhe</h3>
+                    <ul>
+                        <li>Schwarze Laufschuhe</li>
+                        <li>Weiße Laufschuhe</li>
+                        <li>Nike P-6000 Schuhe</li>
+                        <li>Nike Initiator Schuhe</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Bekleidung</h3>
+                    <ul>
+                        <li>Yoga-Hosen</li>
+                        <li>Trainingshosen aus Te...</li>
+                        <li>Tech Fleece</li>
+                        <li>Geschenke: Bekleidung</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Kinder</h3>
+                    <ul>
+                        <li>Schwarze Schuhe für ...</li>
+                        <li>Schwarze Schuhe für ...</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Highlights</h3>
+                    <ul>
+                        <li>Fußballclubs</li>
+                        <li>Fußball</li>
+                        <li>Nike England</li>
+                        <li>Nike Run Club</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-middle">
+                <div class="footer-column">
+                    <h3>Ressourcen</h3>
+                    <ul>
+                        <li>Geschenkgutscheine</li>
+                        <li>Geschenkgutscheine für Firmen</li>
+                        <li>Store suchen</li>
+                        <li>Nike Journal</li>
+                        <li>Member werden</li>
+                        <li>Feedback</li>
+                        <li>Aktionscodes</li>
+                        <li>Produktberatung</li>
+                        <li>Shoe Finder für Laufschuhe</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Hilfe</h3>
+                    <ul>
+                        <li>Hilfe</li>
+                        <li>Bestellstatus</li>
+                        <li>Versand und Lieferung</li>
+                        <li>Rückgaben</li>
+                        <li>Zahlungsoptionen</li>
+                        <li>Kontakt</li>
+                        <li>Bewertungen</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Unternehmen</h3>
+                    <ul>
+                        <li>Über Nike</li>
+                        <li>Neuigkeiten</li>
+                        <li>Karriere</li>
+                        <li>Investoren</li>
+                        <li>Nachhaltigkeit</li>
+                        <li>Barrierefreiheit</li>
+                        <li>Mission</li>
+                        <li>Nike Coaching</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Community-Rabatte</h3>
+                    <ul>
+                        <li>Studierende</li>
+                        <li>Lehrer:innen</li>
+                        <li>Einsatzkräfte</li>
+                        <li>Medizinisches Fachpersonal</li>
+                    </ul>
+                </div>
+                <div class="footer-country">
+                    
+                    <span>Österreich</span>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>2025 Nike, Inc. Alle Rechte vorbehalten</div>
+                <div class="footer-bottom-links">
+                    <span>Guides </span>
+                    <span>Nutzungsbedingungen</span>
+                    <span>Verkaufsbedingungen</span>
+                    <span>Impressum</span>
+                    <span>Datenschutzrichtlinie und Cookie-Erklärung</span>
+                    <span>Cookie-Einstellungen ändern.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
